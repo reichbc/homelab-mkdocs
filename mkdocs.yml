@@ -1,1 +1,117 @@
-site_name: My Docs
+site_name: Homelab Learning by Sir Ram
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.extra
+  - pymdownx.highlight:
+      guess_lang: true
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: ""
+#      toc_depth: 5
+
+plugins:
+#  - include-markdown:
+#      opening_tag: "{!"
+#      closing_tag: "!}"
+#  - markdownextradata:
+#      data: docs/json
+#  - search
+#  - git-revision-date-localized:
+#      type: datetime
+#      locale: en
+#      fallback_to_build_date: true
+#      enable_creation_date: true
+#  - awesome-pages
+#  - glightbox:
+#      touchNavigation: true
+#      loop: false
+#      effect: zoom
+#      width: 100%
+#      height: auto
+#      zoomable: true
+#      draggable: true
+#      auto_caption: false
+#      caption_position: bottom
+#  - redirects:
+#      redirect_maps:
+        #updates.txt: updates.txt
+        #discord.md: https://discord.gg/4K2kdvwzFh
+        #syno-script.md: https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/script/trash_syno_installer.sh
+        # Radarr redirects
+        #Radarr/Radarr-setup-custom-formats.md: Radarr/radarr-setup-quality-profiles.md
+        #Radarr/radarr-setup-custom-formats-anime.md: Radarr/radarr-setup-quality-profiles-anime.md
+        #Radarr/radarr-setup-custom-formats-french.md: Radarr/radarr-setup-quality-profiles-french-en.md
+        # Sonarr redirects
+        #Sonarr/sonarr-setup-custom-formats.md: Sonarr/sonarr-setup-quality-profiles.md
+        #Sonarr/sonarr-setup-custom-formats-anime.md: Sonarr/sonarr-setup-quality-profiles-anime.md
+        # How to old redirects
+        #How-to-setup-for/index.md: Hardlinks/How-to-setup-for/index.md
+        #How-to-setup-for/Docker.md: Hardlinks/How-to-setup-for/Docker.md
+        #How-to-setup-for/Dockstarter.md: Hardlinks/How-to-setup-for/Dockstarter.md
+        #How-to-setup-for/Native.md: Hardlinks/How-to-setup-for/Native.md
+        #How-to-setup-for/Synology.md: Hardlinks/How-to-setup-for/Synology.md
+        #How-to-setup-for/Unraid.md: Hardlinks/How-to-setup-for/Unraid.md
+        # Random redirects
+        #Misc/trash-sync.md: Guide-Sync/index.md
+        # Shortcuts redirects
+        #hardlinks.md: Hardlinks/Hardlinks-and-Instant-Moves.md
+        #hardlink.md: Hardlinks/Hardlinks-and-Instant-Moves.md
+        #check-hardlinks.md: Hardlinks/Check-if-hardlinks-are-working.md
+        #custom-formats.md: Radarr/Radarr-collection-of-custom-formats.md
+        #cf.md: Radarr/Radarr-collection-of-custom-formats.md
+        #TorGuard.md: Misc/How-to-setup-Torguard-for-port-forwarding.md
+        #torguard.md: Misc/How-to-setup-Torguard-for-port-forwarding.md
+        #compose.md: Misc/how-to-provide-a-docker-compose.md
+        #Golden-Rule.md: Misc/x265-4k.md
+        #show-unknown.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
+        #merge-quality.md: Radarr/Tips/Merge-quality.md
+        #jdupes.md: Hardlinks/Replace-copies-with-hardlinks.md
+        # Recyclarr redirects
+        #Recyclarr/recyclarr-configs.md: https://recyclarr.dev/wiki/guide-configs/
+        #Recyclarr/recyclarr-configs-sqp.md: https://recyclarr.dev/wiki/sqp-configs/
+
+theme:
+  name: material
+#  custom_dir: overrides
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      primary: deep purple
+      accent: deep orange
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: indigo
+      accent: deep orange
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  font:
+    text: "San Francisco"
+    code: "Source Code Pro"
+  favicon: img/eye2.png
+  logo: img/homelab.gif

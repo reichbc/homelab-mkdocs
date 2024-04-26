@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Welcome to Homelab Guides
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This site is a Homelab community collaboration effort to bring useful guides and resources into one central place.
+We are not the source of truth on any topic. However, the guides here can be used as functional documentation for those who don't wish to spend an eternity in official product documentation or terrible YouTube videos.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+!!! note
+    **Everything on this site is contributed content.** As such, everything can be edited, but will be subject to review.
+    This repo is currently hosted by Sir Ram: <https://github.com/reichbc/homelab-mkdocs>
+    The site itself is proudly hosted on Cloudflare Pages.

@@ -30,7 +30,8 @@ nav:
     - community/community_info.md
     - community/contributing.md
   - Cloudflare:
-    - ddns-with-curl.md
+    - Cloudflare/Cloudflare Guides.md
+    - Cloudflare/ddns-with-curl.md
 
 
 plugins:

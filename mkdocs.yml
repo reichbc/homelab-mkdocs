@@ -23,6 +23,16 @@ markdown_extensions:
       permalink: ""
 #      toc_depth: 5
 
+nav:
+  - Welcome:
+    - index.md
+  - Community
+    - community/community_info.md
+    - community/contributing.md
+  - Cloudflare
+    - ddns-with-curl.md
+
+
 plugins:
 #  - include-markdown:
 #      opening_tag: "{!"

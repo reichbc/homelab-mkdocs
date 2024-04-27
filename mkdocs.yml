@@ -1,4 +1,4 @@
-site_name: Homelab Learning by Sir Ram
+site_name: Homelab Guides
 markdown_extensions:
   - attr_list
   - admonition
@@ -26,10 +26,10 @@ markdown_extensions:
 nav:
   - Welcome:
     - index.md
-  - Community
+  - Community:
     - community/community_info.md
     - community/contributing.md
-  - Cloudflare
+  - Cloudflare:
     - ddns-with-curl.md
 
 

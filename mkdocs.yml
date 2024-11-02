@@ -29,9 +29,12 @@ nav:
   - Community:
     - community/community_info.md
     - community/contributing.md
+    - community/car_thing.md
   - Cloudflare:
     - Cloudflare/Cloudflare Guides.md
     - Cloudflare/ddns-with-curl.md
+  - Hardware:
+    - Hardware/Raid Card Flashing.md
 
 
 plugins:

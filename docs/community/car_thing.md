@@ -1,3 +1,10 @@
+# Spotify CarThing
+
+!!! note
+    This guide is written and provided by TechGeek01, after modifying two of his own units.
+    The information is from multiple sources and is compiled in a way that worked for him. Your mileage may vary.
+    Proceed with caution, and be mindful of your actions.
+
 ## Quick disclaimer
 I'm running Windows. Specifically, Windows 11. I have not tried this for Linux or Mac. I'll extrapolate these instructions based on the instructions I followed for how this works on there, but I have not tested those instructions on those OSes. ***Fuck your shit up at your own risk, cause I have not tested the instructions I was provided on Linux or Mac. I'm just parroting them here.***
 

@@ -1,4 +1,4 @@
-site_name: Homelab Learning by Sir Ram
+site_name: Homelab Guides
 markdown_extensions:
   - attr_list
   - admonition
@@ -22,6 +22,20 @@ markdown_extensions:
   - toc:
       permalink: ""
 #      toc_depth: 5
+
+nav:
+  - Welcome:
+    - index.md
+  - Community:
+    - community/community_info.md
+    - community/contributing.md
+    - community/car_thing.md
+  - Cloudflare:
+    - Cloudflare/Cloudflare Guides.md
+    - Cloudflare/ddns-with-curl.md
+  - Hardware:
+    - Hardware/Raid Card Flashing.md
+
 
 plugins:
 #  - include-markdown:

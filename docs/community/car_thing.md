@@ -13,7 +13,7 @@
 # Download all the things
 - [Zadig 2.9](https://zadig.akeo.ie/)
 - Thing Labs firmware from [thingify.tools](https://thingify.tools/) - Currently 8.9.2
-- [thinglabsoss/superbird-tool](thinglabsoss/superbird-tool) on GitHub - Click the green dropdown and download the ZIP archive of the code
+- [thinglabsoss/superbird-tool](https://github.com/thinglabsoss/superbird-tool) on GitHub - Click the green dropdown and download the ZIP archive of the code
 - [Git]([https://git-scm.com/downloads](https://git-scm.com/downloads))
 - [Python](https://www.python.org/) - I'm using 3.12. Officially, Superbird docs say it's tested with 3.10 and 3.11, but 3.12 worked for me.
 

@@ -33,7 +33,7 @@ nav:
   - Cloudflare:
     - Cloudflare/Cloudflare Guides.md
     - Cloudflare/ddns-with-curl.md
-  - Hardware:
+#  - Hardware:
 #    - Hardware/Raid Card Flashing.md
 
 

@@ -34,7 +34,7 @@ nav:
     - Cloudflare/Cloudflare Guides.md
     - Cloudflare/ddns-with-curl.md
   - Hardware:
-#    - Hardware/Raid Card Flashing.md
+##    - Hardware/Raid Card Flashing.md
 
 
 plugins:

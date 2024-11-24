@@ -7,10 +7,11 @@
 
 !!! warning
     I've tested this on Windows. Guides for Linux and Mac are copied from my references, and I have not tested them. ***Fuck your shit up at your own risk.***
-    
+
     The instructions for Windows are what worked for me. I'll also assume syntax for Windows, and use backslashes and Windows syntax for the commands. Adjust accordingly if you're not using Windows.
 
 # Download all the things
+
 - [Zadig 2.9](https://zadig.akeo.ie/)
 - Thing Labs firmware from [thingify.tools](https://thingify.tools/) - Currently 8.9.2
 - [thinglabsoss/superbird-tool](https://github.com/thinglabsoss/superbird-tool) on GitHub - Click the green dropdown and download the ZIP archive of the code
@@ -21,7 +22,9 @@
 2. Extract your Thing Labs firmware to a folder inside of `superbird`. I'll assume you've called this `thinglabs`. This folder should have all the data files directly inside of it
 
 # Setting up to fuck around
+
 Before we fuck around, you need the right drivers.
+
 1. If your Car Thing is plugged into your PC, unplug that shit
 2. Hold down buttons 1 and 4
 3. While holding them, plug it in. If this is done correctly, your PC should see it, but the screen will remain blank, and it won't try to boot with the regular boot process.
@@ -29,9 +32,11 @@ Before we fuck around, you need the right drivers.
 5. Install the driver
 
 # Fucking around
+
 Before you can do anything with the Car Thing, modified firmware has to be flashed. Without this, things like ADB and such aren't exposed.
 
 At this point, I'll assume a few things:
+
 1. You have the correct `libusb` or `libusbK` driver installed
 2. You've extracted Superbird to the `superbird` directory
 3. You've extracted the Thing Labs firmware to the `superbird\thinglabs` directory
@@ -40,14 +45,19 @@ Get your happy ass a command prompt, terminal, or whatever shell window you like
 1. If your Car Thing is plugged in still, unplug that shit
 2. The same as before, hold buttons 1 and 4
 3. While still holding those buttons, plug it in
+
 ## Python requirements
+
 ### Windows
+
 ```
 python -m pip install git+https://github.com/superna9999/pyamlboot
 python -m pip install pyusb
 python -m pip install libusb
 ```
+
 ### Linux
+
 !!! warning
     ***I haven't tested this. This is copied and pasted from Superbird docs.***
 
@@ -56,7 +66,9 @@ python -m pip install libusb
 ```
 sudo python3 -m pip install git+https://github.com/superna9999/pyamlboot
 ```
+
 ### macOS
+
 !!! warning
     ***I haven't tested this. This is copied and pasted from Superbird docs.***
 
@@ -68,7 +80,9 @@ brew install python3 libusb
 ```
 
 ## Continuing to fuck around
+
 If this all worked correctly, running
+
 ```
 superbird_tool.py --find_device
 ```
@@ -76,6 +90,7 @@ superbird_tool.py --find_device
 Should show you something like `Found device booted in USB Mode`.
 
 To enter burn mode, run
+
 ```
 superbird_tool.py --burn_mode
 ```
@@ -94,9 +109,11 @@ This is gonna take a few minutes, but if all goes well, you should have modded f
 Unplug your Car Thing and plug it back in to drop out of USB mode, and boot normally. If all goes well, you should see the "ThingLabs" logo on boot.
 
 # Doing shit with the Car Thing
+
 The 2 things I've tested are DeskThing and GlanceThing. I prefer the layout of DeskThing in general, as it's closer to stock Spotify for media stuff, but personally, it seems to lag behind for me on media updates. I find GlanceThing to be smoother of a process. I'll outline the process I followed for both.
 
 ## DeskThing
+
 Download DeskThing Server from [ThingLabs](https://thingify.tools/firmware/aKYXqc_4TE-hv8Q1Khr7F?tab=versions) and install it. When you're done, run it.
 
 1. Under the "Clients" tab, you *should* see your Car Thing in the list. If it fails to connect, try clicking the "configure" button to connect it.
@@ -108,6 +125,7 @@ Download DeskThing Server from [ThingLabs](https://thingify.tools/firmware/aKYXq
     3. Save, and you should see a browser window pop up with a success message. You can close that Window.
 
 ## GlanceThing
+
 Download the latest version of GlanceThing from the [releases page](https://github.com/BluDood/GlanceThing/releases) on GitHub and install it.
 
 GlanceThing will guide you through the install process, and is a lot easier to install than DeskThing.

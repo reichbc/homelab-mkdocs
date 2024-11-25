@@ -14,7 +14,7 @@
 
 - [Zadig 2.9](https://zadig.akeo.ie/)
 - Thing Labs firmware from [thingify.tools](https://thingify.tools/) - Currently 8.9.2
-- [thinglabsoss/superbird-tool](https://github.com/thinglabsoss/superbird-tool) on GitHub - Click the green dropdown and download the ZIP archive of the code
+- [thinglabsoss/superbird-tool](https://github.com/thinglabsoss/superbird-tool) on GitHub - Click the green dropdown and download the ZIP archive of the code  
 - [Git](https://git-scm.com/downloads)
 - [Python](https://www.python.org/) - I'm using 3.12. Officially, Superbird docs say it's tested with 3.10 and 3.11, but 3.12 worked for me.
 
@@ -23,28 +23,27 @@
 
 # Setting up to fuck around
 
-Before we fuck around, you need the right drivers.
-
-1. If your Car Thing is plugged into your PC, unplug that shit
-2. Hold down buttons 1 and 4
-3. While holding them, plug it in. If this is done correctly, your PC should see it, but the screen will remain blank, and it won't try to boot with the regular boot process.
-4. If you did this correctly, Zadig should show you a `GX-CHIP` device. The driver you want is *generally* `libusb`. On Windows specifically, you want `libusbK` instead.
-5. Install the driver
+Before we fuck around, you need the right drivers.  
+1. If your Car Thing is plugged into your PC, unplug it.  
+2. Hold down buttons 1 and 4  
+3. While holding them, plug it in. If this is done correctly, your PC should see it, but the screen will remain blank, and it won't try to boot with the regular boot process.  
+4. If you did this correctly, Zadig should show you a `GX-CHIP` device. The driver you want is *generally* `libusb`. On Windows specifically, you want `libusbK` instead.  
+5. Install the driver  
 
 # Fucking around
 
 Before you can do anything with the Car Thing, modified firmware has to be flashed. Without this, things like ADB and such aren't exposed.
 
-At this point, I'll assume a few things:
+At this point, I'll assume a few things:  
+1. You have the correct `libusb` or `libusbK` driver installed  
+2. You've extracted Superbird to the `superbird` directory  
+3. You've extracted the Thing Labs firmware to the `superbird\thinglabs` directory  
 
-1. You have the correct `libusb` or `libusbK` driver installed
-2. You've extracted Superbird to the `superbird` directory
-3. You've extracted the Thing Labs firmware to the `superbird\thinglabs` directory
 Get your happy ass a command prompt, terminal, or whatever shell window you like, and get to `superbird` wherever it is that you put it.
 
-1. If your Car Thing is plugged in still, unplug that shit
-2. The same as before, hold buttons 1 and 4
-3. While still holding those buttons, plug it in
+1. If your Car Thing is plugged in still, unplug it  
+2. The same as before, hold buttons 1 and 4  
+3. While still holding those buttons, plug it in  
 
 ## Python requirements
 
@@ -86,7 +85,6 @@ If this all worked correctly, running
 ```
 superbird_tool.py --find_device
 ```
-
 Should show you something like `Found device booted in USB Mode`.
 
 To enter burn mode, run
@@ -96,7 +94,6 @@ superbird_tool.py --burn_mode
 ```
 
 Once you're successfully in burn mode, it's time to flash the modded firmware.
-
 ```
 superbird_tool.py --restore_device ./thinglabs
 ```
@@ -116,13 +113,13 @@ The 2 things I've tested are DeskThing and GlanceThing. I prefer the layout of D
 
 Download DeskThing Server from [ThingLabs](https://thingify.tools/firmware/aKYXqc_4TE-hv8Q1Khr7F?tab=versions) and install it. When you're done, run it.
 
-1. Under the "Clients" tab, you *should* see your Car Thing in the list. If it fails to connect, try clicking the "configure" button to connect it.
-2. On the "Downloads" tab, find and download the "Spotify" app.
-    1. Once it finishes, click "Initialize App"
-3. Go to the "Apps" tab, and click the bubble that says "Requesting Data", and follow the directions to go to the Spotify dev dashboard and create your app.
-    1. Copy and paste in the client ID and client secret when DeskThing asks, which is how this will connect to Spotify's API.
-    2. Set the endpoint url to `http://localhost:8888/callback/spotify`
-    3. Save, and you should see a browser window pop up with a success message. You can close that Window.
+1. Under the "Clients" tab, you *should* see your Car Thing in the list. If it fails to connect, try clicking the "configure" button to connect it.  
+2. On the "Downloads" tab, find and download the "Spotify" app.  
+    1. Once it finishes, click "Initialize App"  
+3. Go to the "Apps" tab, and click the bubble that says "Requesting Data", and follow the directions to go to the Spotify dev dashboard and create your app.  
+    1. Copy and paste in the client ID and client secret when DeskThing asks, which is how this will connect to Spotify's API.  
+    2. Set the endpoint url to `http://localhost:8888/callback/spotify`  
+    3. Save, and you should see a browser window pop up with a success message. You can close that Window.  
 
 ## GlanceThing
 
